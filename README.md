@@ -1,4 +1,4 @@
-<img src="https://assets.ubuntu.com/v1/c037fd75-ubuntu-logo.png"  height="80"/>
+## Cassandra: Ubuntu + OpenSSH Docker image
 
 This is a simple image with `Ubuntu` and `OpenSSH` on board.  
 Just pull it and start hacking  
