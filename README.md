@@ -3,7 +3,6 @@
 This is a simple image with `Ubuntu` and `OpenSSH` on board.  
 Just pull it and start hacking  
 
-[![Travis](https://img.shields.io/travis/PavelShar/Cassandra.svg?style=flat-square)][travis]
 [![Docker Pulls](https://img.shields.io/docker/pulls/pavelshar/cassandra.svg?style=flat-square)][hub]
 [![Docker Stars](https://img.shields.io/docker/stars/pavelshar/cassandra.svg?style=flat-square)][hub]
 [![Docker Automated build](https://img.shields.io/docker/automated/pavelshar/cassandra.svg?style=flat-square)][hub]
@@ -30,4 +29,3 @@ Simple run: `docker run --name cassandra -p 8080:80 -p 8022:22 -d pavelshar/cass
 You can redefine ssh password using environment variable `SSH_PASSWORD` when creating container - `docker run --name cassandra -p 8080:80 -p 8022:22 -d -e SSH_PASSWORD=mysshpass pavelshar/cassandra:latest`
 
 [hub]: https://hub.docker.com/r/pavelshar/cassandra/
-[travis]: https://travis-ci.org/PavelShar/Cassandra
