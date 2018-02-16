@@ -1,6 +1,7 @@
-## About this image
-This is a simple image with Ubuntu and OpenSSH on board.  
-Just pull it and start hacking
+<img src="https://assets.ubuntu.com/v1/c037fd75-ubuntu-logo.png"  height="80"/>
+
+This is a simple image with `Ubuntu` and `OpenSSH` on board.  
+Just pull it and start hacking  
 
 [![Travis](https://img.shields.io/travis/pavelshar/cassandra.svg?style=flat-square)][travis]
 [![Docker Pulls](https://img.shields.io/docker/pulls/pavelshar/cassandra.svg?style=flat-square)][hub]
