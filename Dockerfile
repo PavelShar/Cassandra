@@ -5,19 +5,16 @@ RUN echo "root ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
 USER root
 
 ADD . /.docker
-RUN chown -R root:root .docker
-RUN chmod -R 755 .docker
-
-
-WORKDIR .docker/
+RUN chown -R root:root /.docker
+RUN chmod -R 755 /.docker
 
 
 # Build project
 # Install and configure dependencies
 
 RUN \
-    sh ./deploy/build/base.sh && \
-    sh ./deploy/build/ssh.sh
+    sh /.docker/deploy/build/base.sh && \
+    sh /.docker/deploy/build/ssh.sh
 
 
 # Expose defaults 80 and 22 ports
@@ -26,4 +23,4 @@ RUN \
 EXPOSE 80 22 8000-8010
 
 
-CMD sh ./deploy/entrypoint.sh
+CMD sh /.docker/deploy/entrypoint.sh && sh -c "while true; do sleep 1; done"
