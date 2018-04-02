@@ -21,7 +21,7 @@ Just pull it and start hacking
 - Default password: `password`
 
 #### Exposed ports
-This image exposes `80` and `22` default ports. For some other reasons you can use `8000-8010` ports that are also exposed.
+This image exposes `80` and `22` default ports
 
 #### Running image
 Simple run: `docker run --name cassandra -p 8080:80 -p 8022:22 -d pavelshar/cassandra:latest`. This command pulls latest image, start container with name `cassandra` and map outter 8080 port to 80 inner image's port and 8022 with 22 accordingly
