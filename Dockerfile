@@ -18,7 +18,7 @@ RUN \
 
 # Expose defaults 80 and 22 ports
 # Also expose additional set of ports from 8000 to 8010
-EXPOSE 80 22 8000-8010
+EXPOSE 80 22
 
 
 CMD  \
