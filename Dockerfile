@@ -17,17 +17,9 @@ RUN \
 
 
 # Expose defaults 80 and 22 ports
-# Also expose additional set of ports from 8000 to 8010
 EXPOSE 80 22
 
 
-CMD  \
-    # Change ssh password
-    echo root:${SSH_PASSWORD:-password} | chpasswd && \
-
-    # Start services
-    service ssh start && \
-    service nginx start && \
-
-    # Create daemon
-    sh /.docker/deploy/daemon.sh
+CMD \
+    sh /.docker/deploy/init/entrypoint.sh && \
+    sh /.docker/deploy/init/daemon.sh
